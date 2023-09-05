@@ -35,8 +35,7 @@ a:active {
 }
 
 .profile {
-    height: 400px;
-    max-height: 400px;
+    max-width: 200px;
 }
 
 figure {
