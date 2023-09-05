@@ -1,3 +1,35 @@
 body {
-    background-color: orange;
+    background-color: #0c83b1;
+}
+
+nav, h1, h2, p {
+    font-family: "Verdana", monospace;
+    color: #fefefe;
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: #66ffcc;
+}
+
+a:visited {
+    color: #285d4b;
+}
+
+a:hover {
+    color: #bdfff0;
+}
+
+a:active {
+    color: #00bd7e;
 }
