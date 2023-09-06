@@ -3,23 +3,18 @@ body {
     color: #fefefe;
 }
 
-nav, h1, h2, p {
-    font-family: "Verdana", monospace;
+footer {
     text-align: center;
 }
 
-img {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer {
+nav, h1, h2, p, figure {
+    font-family: "Verdana", monospace;
     text-align: center;
 }
 
 a {
     color: #66ffcc;
+    text-decoration:none;
 }
 
 a:visited {
@@ -38,14 +33,13 @@ a:active {
     max-width: 200px;
 }
 
-figure {
-    text-align: center;
-}
-
 .contract {
     text-align: left;
 }
 
 li {
     margin: 15px auto;
+    max-width: 500px;
+    min-width: 300px;
+    font-family: Verdana, monospace;
 }
