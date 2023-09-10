@@ -7,7 +7,7 @@ footer {
     text-align: center;
 }
 
-nav, h1, h2, p, figure {
+nav, h1, h2, h3, p, table, figure {
     font-family: "Verdana", monospace;
     text-align: center;
 }
@@ -42,4 +42,17 @@ li {
     max-width: 500px;
     min-width: 300px;
     font-family: Verdana, monospace;
+}
+
+table, th, td {
+    margin: 0 auto;
+    border: 1px solid #fefefe;
+}
+
+tr:nth-child(odd) {
+    background-color: #00668e;
+}
+
+th, .title-block {
+    background-color: #013d55;
 }
