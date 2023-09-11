@@ -56,3 +56,42 @@ tr:nth-child(odd) {
 th, .title-block {
     background-color: #013d55;
 }
+
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    padding: 1rem 3rem;
+}
+
+label {
+    font-family: "Verdana", monospace;
+    display: block;
+    margin: 5px;
+}
+
+input {
+    width: 80%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    background-color: #034479;
+    color: #fefefe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type = "checkbox"], input[type = "radio"] {
+    width: auto;
+    margin-top: 10px;
+}
+
+.checkbox-label, .radio-label {
+    display: inline;
+}
+
+.form-controls {
+    width: 80px;
+    margin: 1rem;
+    display: inline-block;
+}

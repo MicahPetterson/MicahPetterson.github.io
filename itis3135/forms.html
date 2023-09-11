@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Micah Petterson's Mellow Phoenix || ITIS 3135 || Forms</title>
+    <link rel = "stylesheet" href = "styles/default.css">
+</head>
+<body>
+    <h1>Micah Petterson's Mellow Phoenix || ITIS 3135</h1>
+    <nav>
+        <a href = "./">Home</a>
+        ||
+        <a href = "introduction.html">Introduction</a>
+        ||
+        <a href = "tables.html">Tables</a>
+        ||
+        <a href = "forms.html">Forms</a>
+        ||
+        <a href = "contract.html">Contract</a>
+        ||
+        <a href = "../">UNCC Home</a>
+    </nav>
+    <main>
+        <h2>ITIS 3135 Forms</h2>
+        <form action = "#">
+            <fieldset>
+                <label for = "name">Your Name:</label>
+                <input id = "name" name = "name" type = "text" placeholder = "Andrew Hussie" required/>
+                <label for = "phone">Your Phone Number:</label>
+                <input id = "phone" name = "phone" placeholder = "777-333-1234" size = "12" required/>
+                <label for = "email">Your Email:</label>
+                <input id = "email" name = "email" type = "email" placeholder = "thefourthwall@juno.com" required/>
+            </fieldset>
+            <fieldset style = "padding-top: 1rem;">
+                <p style = "text-align: left;">What kind of programming experience do you have?</p>
+                <label for = "Java" class = "checkbox-label">
+                    <input id = "Java" name = "Java" type = "checkbox"/>Java
+                </label>
+                <label for = "Python" class = "checkbox-label">
+                    <input id = "Python" name = "Python" type = "checkbox"/>Python
+                </label>
+                <label for = "C" class = "checkbox-label">
+                    <input id = "C" name = "C" type = "checkbox"/>C
+                </label>
+                <label for = "HTML/CSS" class = "checkbox-label">
+                    <input id = "HTML/CSS" name = "HTML/CSS" type = "checkbox"/>HTML/CSS
+                </label>
+                <label for = "C++" class = "checkbox-label">
+                    <input id = "C++" name = "C++" type = "checkbox"/>C++
+                </label>
+                <label for = "other">Other:</label>
+                <input id = "other" name = "other" type = "text" placeholder = "Ruby, JavaScript, etc."/>
+            </fieldset>
+            <fieldset>
+                <p style = "text-align: left;">Are you currently a college student?</p>
+                <label for = "yes" class = "radio-label">
+                    <input id = "yes" name = "student" type = "radio" required/>Yes
+                </label>
+                <label for = "no" class = "radio-label">
+                    <input id = "no" name = "student" type = "radio" required/>No
+                </label>
+                <label for = "graduation">If so, what year are you graduating?</label>
+                <select id = "graduation" name = "graduation" required>
+                    <option value = "">(Choose one)</option>
+                    <option value = "2023">2023</option>
+                    <option value = "2024">2024</option>
+                    <option value = "2025">2025</option>
+                    <option value = "2026">2026</option>
+                    <option value = "2027">2027</option>
+                    <option value = "2028">2028</option>
+                    <option value = "indeterminate">Indeterminate</option>
+                    <option value = "na">Not a student</option>
+                </select>
+            </fieldset>
+            <fieldset style = "padding: 0 1rem; text-align: center; border: none;">
+                <input type = "submit" value = "Submit" class = "form-controls"/>
+                <input type = "reset" value = "Reset" class = "form-controls"/>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>
+            <a href = "../">CLT Webspace</a>
+            ||
+            <a href = "https://github.com/MicahPetterson">GitHub</a>
+            ||
+            <a href = "https://micahpetterson.github.io">GitHub.io</a>
+            ||
+            <a href = "https://micahpetterson.github.io/itis3135">ITIS3135.io</a>
+            ||
+            <a href = "https://www.freecodecamp.org/Crediblemicah">FreeCodeCamp</a>
+            ||
+            <a href = "https://www.codecademy.com/profiles/Crediblemicah">Codecademy</a>
+            ||
+            <a href = "http://www.linkedin.com/in/micah-petterson">LinkedIn</a>
+        </p>
+        <p>Designed by <a href = "pettersonco.com/">Petterson & Co.</a> © (2023)</p>
+        <a href = "https://validator.w3.org/check?uri=referer">
+        <img style = "border:0;width:88px;height:31px"
+        src = "https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt = "Valid HTML!">
+        </a>
+        <a href = "https://jigsaw.w3.org/css-validator/check/referer">
+            <img style = "border:0;width:88px;height:31px"
+            src = "https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+</body>
+</html>
