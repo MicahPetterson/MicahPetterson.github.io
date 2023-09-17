@@ -2,34 +2,45 @@
 @import url('https://fonts.googleapis.com/css?family=Quantico');
 
 body {
-    background-color: #0c83b1;
-    color: #fefefe;
+    background-color: #1d2a2d;
+    color: #E4E4F5;
+    font-family: "Hind Guntur", monospace;
 }
 
-footer {
+footer, nav {
     text-align: center;
 }
 
-nav, h1, h2, h3, p, table, figure {
+h1, h2, table, figure {
     font-family: "Quantico", monospace;
     text-align: center;
 }
 
+h3, h4 {
+    font-family: "Quantico", monospace;
+    margin-left: 10%;
+}
+
+p {
+    margin: 20px 10%;
+    text-indent: 50px;
+}
+
 a {
-    color: #66ffcc;
+    color: #89bbfe;
     text-decoration:none;
 }
 
 a:visited {
-    color: #285d4b;
+    color: #0250b6;
 }
 
 a:hover {
-    color: #bdfff0;
+    color: #5da3fd;
 }
 
 a:active {
-    color: #00bd7e;
+    color: #2180fd;
 }
 
 .profile {
