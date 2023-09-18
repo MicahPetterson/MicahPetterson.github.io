@@ -109,3 +109,7 @@ input[type = "checkbox"], input[type = "radio"] {
     margin: 1rem;
     display: inline-block;
 }
+
+.secondary-nav {
+    font-size: 14px;
+}
