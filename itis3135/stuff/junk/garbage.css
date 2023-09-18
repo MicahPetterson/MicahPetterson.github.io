@@ -1,0 +1,41 @@
+h1 {
+    margin: 10px 100px;
+}
+
+h2 {
+    font-family: Comic Sans MS;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+    font-family: Comic Sans MS;
+    text-align: center;
+    border-top: dotted 100px yellow;
+    border-left: dashed 10px blue;
+    border-bottom: solid purple 50px;
+    border-right: double 20px green;
+}
+
+.blah {
+    text-align: center;
+    font-size: 50px;
+}
+
+.dumb {
+    margin-left: 30px;
+}
+
+.awesome {
+    margin-left: -130px;
+}
+
+.delete {
+    color: rgb(243, 242, 242);
+}
+
+.yeah {
+    background-color: coral;
+}
