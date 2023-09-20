@@ -31,10 +31,6 @@ a {
     text-decoration:none;
 }
 
-a:visited {
-    color: #0250b6;
-}
-
 a:hover {
     color: #5da3fd;
 }
