@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quantico');
 
 body {
-    background-color: #1d2a2d;
+    background-color: #050808;
+    background-image: linear-gradient(to bottom, #1d2a2d, #050808);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #E4E4F5;
     font-family: "Hind Guntur", monospace;
 }
