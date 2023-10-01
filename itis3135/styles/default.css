@@ -24,6 +24,10 @@ h3, h4 {
     margin-left: 10%;
 }
 
+h1, h2, h3, h4 {
+    text-shadow: 0 0 2.5px;
+}
+
 p {
     margin: 20px 10%;
     text-indent: 50px;
@@ -62,12 +66,16 @@ table, th, td {
     border: 1px solid #fefefe;
 }
 
+tr:nth-child(even) {
+    background-color: #2a166d;
+}
+
 tr:nth-child(odd) {
-    background-color: #00668e;
+    background-color: #061577;
 }
 
 th, .title-block {
-    background-color: #013d55;
+    background-color: #06003e;
 }
 
 form {
