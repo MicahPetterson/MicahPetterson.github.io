@@ -1,5 +1,3 @@
-alert("Hey my script is running");
-
 let d = new Date();
 
 let hours = d.getHours();
@@ -41,5 +39,59 @@ function respond()
 function name_polygon()
 {
     let shapes = ["hena", "di", "tri", "tetra", "penta", "hexa", "hepta", "octa", "nona", "deca"];
-    alert("A shape with that many sides makes a " + shapes[document.getElementById("polygon").value - 1] + "gon!");
+    let number = Math.round(Math.abs(document.getElementById("polygon").value));
+    alert("A shape with that many sides makes a " + shapes[number - 1] + "gon!");
+}
+
+function dyson_sphere()
+{
+    let stars = ["Eridani A", "Crucis Aa", "Tauri Aa1", "Corvi", "Cephei Aa", "Ursae Majoris A",
+    "Geminorum Aa", "Canis Majoris Aa", "Gruis", "Sagittarii A"];
+    document.getElementById("dyson-output").innerHTML = "Dyson Sphere constructed around star " + stars[Math.floor(Math.random() * 10)] + ".";
+}
+
+let net_worth = 486385699375;
+
+function calculate_value()
+{
+    net_worth += Math.floor((Math.random() * 10000000) + 10000000);
+    document.getElementById("value-output").innerHTML = "Current universal net worth: $" + net_worth;
+}
+
+let cookies = 0;
+
+function have_cookie()
+{
+    if(cookies == 0)
+    {
+        document.getElementById("cookie-output").innerHTML = "You got a cookie! You now have " + ++cookies + " cookie :D";
+        return;
+    }
+    if(cookies > 100)
+    {
+        document.getElementById("cookie-output").innerHTML = "Okay, that's enough cookies for you >:(";
+        return;
+    }
+    document.getElementById("cookie-output").innerHTML = "You got a cookie! You now have " + ++cookies + " cookies :D";
+}
+
+function generate_website()
+{
+    let excuses = ["Website generated successfully! However, the IP address cannot be located.",
+                   "Website generated successfully! However, the domain was lost somewhere in the stellar network",
+                   "Website generation failed, servers lost to black hole",
+                   "What were you trying to do again?",
+                   "Website generated successfully! However, the website is in a language that has not been discovered yet",
+                   "Website generation failed. Cookie-induced web traffic.",
+                   "Website generated successfully! Unfortunately, it fell into a time rift and was sent far into the past. It's called YouTube, apparently."];
+    document.getElementById("website-output").innerHTML = excuses[Math.floor(Math.random() * 7)];
+}
+
+let stars = 200000000000000000000000
+
+function count_stars()
+{
+    var add_or_subtract = Math.random() < 0.5 ? -1 : 1;
+    let current_stars = stars + (add_or_subtract * Math.floor((Math.random() * 900000000000000000)));
+    document.getElementById("stars-output").innerHTML = "There are approximately " + current_stars + " stars in the universe.";
 }

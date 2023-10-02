@@ -120,3 +120,14 @@ input[type = "checkbox"], input[type = "radio"] {
 .secondary-nav {
     font-size: 14px;
 }
+
+.custom-buttons {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
+.custom-button-output {
+    text-align: center;
+    text-indent: 0;
+}
