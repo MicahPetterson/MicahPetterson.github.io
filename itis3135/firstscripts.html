@@ -5,14 +5,27 @@
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <title>Micah Petterson's Mellow Phoenix || ITIS 3135 || Home</title>
     <link rel = "stylesheet" href = "styles/default.css">
-    <script src = "scripts/defaultscripts.js"></script>
 </head>
 <body>
     <div data-include = "components/header.html"></div>
     <main>
         <h2>ITIS 3135 First Scripts</h2>
         <h3 id = "date"></h3>
+        <form id = "form">
+            <label for = "name">What's your name?</label>
+            <input id = "name" placeholder = "Inigo Montoya">
+            <label for = "wellbeing">And how are you doing today?</label>
+            <input id = "wellbeing" placeholder = "I have never felt worse in my entire life than I do right now.">
+            <input type = "button" value = "Submit" class = "form-controls" onclick = "respond()">
+        </form>
+        <h3 id = "first-form-response"></h3>
+        <form>
+            <label for = "polygon">Enter your favorite number from 1 to 10!</label>
+            <input id = "polygon" placeholder = "9001">
+            <input type = "button" value = "Submit" class = "form-controls" onclick = "name_polygon(document.getElementById('polygon').value)">
+        </form>
     </main>
+    <script src = "scripts/defaultscripts.js"></script>
     <div data-include = "components/footer.html"></div>
     <script src = "scripts/HTMLInclude.js"></script>
 </body>
