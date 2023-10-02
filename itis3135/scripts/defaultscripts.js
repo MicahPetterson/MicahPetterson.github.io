@@ -41,5 +41,5 @@ function respond()
 function name_polygon()
 {
     let shapes = ["hena", "di", "tri", "tetra", "penta", "hexa", "hepta", "octa", "nona", "deca"];
-    alert("A shape with that many sides makes a " + shapes[document.getElementById("sides").value - 1] + "gon!");
+    alert("A shape with that many sides makes a " + shapes[document.getElementById("polygon").value - 1] + "gon!");
 }
