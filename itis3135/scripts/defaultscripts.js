@@ -1,3 +1,4 @@
 alert("Hey my script is running");
 
-document.getElementById("date").innerHTML = new Date();
+const d = new Date();
+document.getElementById("date").innerHTML = d;
