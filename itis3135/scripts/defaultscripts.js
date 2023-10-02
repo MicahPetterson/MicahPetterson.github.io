@@ -38,7 +38,8 @@ function respond()
     name + "!" + " We're glad you're doing " + wellbeing + "!";
 }
 
-function name_polygon(number_of_sides)
+function name_polygon()
 {
-    alert("ok");
+    let shapes = ["hena", "di", "tri", "tetra", "penta", "hexa", "hepta", "octa", "nona", "deca"];
+    alert("A shape with that many sides makes a " + shapes[document.getElementById("sides").value - 1] + "gon!");
 }
