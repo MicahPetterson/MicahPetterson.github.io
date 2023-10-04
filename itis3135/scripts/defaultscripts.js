@@ -1,24 +1,31 @@
-let d = new Date();
+setDate();
 
-let hours = d.getHours();
-let meridiem = "AM";
-
-if (d.getHours() > 12)
+function setDate()
 {
-    hours = d.getHours() - 12;
-    meridiem = "PM";
+    let d = new Date();
+
+    let hours = d.getHours();
+    let meridiem = "AM";
+
+    if (d.getHours() > 12)
+    {
+        hours = d.getHours() - 12;
+        meridiem = "PM";
+    }
+
+    let minutes = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
+
+    let weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    let day = weekday[d.getDay()];
+
+    let months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    let month = months[d.getMonth()];
+
+        document.getElementById("date").innerHTML = "Today is " + hours + ":" + minutes + meridiem + 
+        " on " + day + ", " + d.getDate() + " " + month + ", " + d.getFullYear() + ".";
+    
+    setTimeout(setDate, 1000);
 }
-
-let minutes = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
-
-let weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-let day = weekday[d.getDay()];
-
-let months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-let month = months[d.getMonth()];
-
-document.getElementById("date").innerHTML = "Today is " + hours + ":" + minutes + meridiem + 
-" on " + day + ", " + d.getDate() + " " + month + ", " + d.getFullYear() + ".";
 
 function respond()
 {
