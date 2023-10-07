@@ -85,6 +85,7 @@ form {
 
 fieldset {
     padding: 1rem 3rem;
+    border: 1px solid #b3dbfc;
 }
 
 label {
@@ -93,13 +94,38 @@ label {
     margin: 5px;
 }
 
-input {
+input:not([type = "button"]), textarea {
     width: 80%;
     vertical-align: middle;
     margin-bottom: 10px;
-    background-color: #034479;
+    background-color: #10202c;
+    border: 1px solid #b3dbfc;
     color: #fefefe;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type = "button"], input[type = "submit"], input[type = "reset"] {
+    background-color: #27294e;
+    color: #E4E4F5;
+    border: 1px solid #b3dbfc;
+    width: 100px;
+    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[type = "button"]:hover, input[type = "submit"]:hover, input[type = "reset"]:hover {
+    background-color: #474180;
+}
+
+input[type = "button"]:active, input[type = "submit"]:active, input[type = "reset"]:active {
+    background-color: #06003e;
+    border: 1px solid #819fb8;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
 }
 
 input[type = "checkbox"], input[type = "radio"] {
@@ -122,9 +148,9 @@ input[type = "checkbox"], input[type = "radio"] {
 }
 
 .custom-buttons {
-    display: block;
+    display: block !important;
     margin: 20px auto;
-    width: 200px;
+    width: 200px !important;
 }
 
 .custom-button-output {

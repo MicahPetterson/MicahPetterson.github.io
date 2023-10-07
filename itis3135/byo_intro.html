@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Micah Petterson's Mellow Phoenix ☆ ITIS 3135 ☆ Home</title>
+    <link rel = "stylesheet" href = "styles/default.css">
+</head>
+<body>
+    <div data-include = "components/header.html"></div>
+    <main>
+        <h2>Build Your Own Introduction</h2>
+        <h2>Here you can build your own introduction! Fill out the form below to create your page.</h2>
+        <form>
+            <fieldset>
+                <label for = "name">Name:</label>
+                <input id = "name" name = "name" placeholder = "Lucian Prawn" required>
+                <label for = "mascot">Mascot:</label>
+                <input id = "mascot" name = "mascot" placeholder = "Legendary Pufferfish" required>
+                <label for = "image">Upload an image of yourself:</label>
+                <input id = "image" name = "image" type = "file" required>
+                <label for = "caption">Image Caption:</label>
+                <input id = "caption" name = "caption" placeholder = "America'ing." required>
+            </fieldset>
+            <fieldset>
+                <label for = "personal">Personal Background:</label>
+                <textarea id = "personal" name = "personal" required></textarea>
+                <label for = "professional">Professional Background:</label>
+                <textarea id = "professional" name = "professional" required></textarea>
+                <label for = "academic">Academic Background:</label>
+                <textarea id = "academic" name = "academic" required></textarea>
+            </fieldset>
+            <fieldset>
+                <label for = "web-dev">Background in Web Development:</label>
+                <textarea id = "web-dev" name = "web-dev" required></textarea>
+                <label for = "primary-platform">Primary Computer Platform:</label>
+                <input id = "primary-platform" name = "primary-platform" placeholder = "Windows 11" required>
+            </fieldset>
+            <fieldset id = "courses">
+                <label>Courses You're Taking</label>
+                <input type = "button" value = "Add Course" onclick = "addCourse()" class = "custom-buttons">
+            </fieldset>
+            <fieldset style = "padding: 2rem 2rem; text-align: center; border: none;">
+                <input type = "submit" value = "Submit">
+                <input type = "reset" value = "Reset">
+            </fieldset>
+        </form>
+    </main>
+    <div data-include = "components/footer.html"></div>
+    <script src = "scripts/survey.js"></script>
+    <script src = "scripts/HTMLInclude.js"></script>
+</body>
+</html>
