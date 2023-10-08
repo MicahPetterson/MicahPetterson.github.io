@@ -8,10 +8,10 @@
 </head>
 <body>
     <div data-include = "components/header.html"></div>
-    <main>
+    <main id = "form">
         <h2>Build Your Own Introduction</h2>
         <h2>Here you can build your own introduction! Fill out the form below to create your page.</h2>
-        <form>
+        <form action="#" onsubmit="generateIntro()"">
             <fieldset>
                 <label for = "name">Name:</label>
                 <input id = "name" name = "name" placeholder = "Lucian Prawn" required>
@@ -37,11 +37,21 @@
                 <input id = "primary-platform" name = "primary-platform" placeholder = "Windows 11" required>
             </fieldset>
             <fieldset id = "courses">
-                <label>Courses You're Taking</label>
+                <label>Courses You're Taking:</label>
                 <input type = "button" value = "Add Course" onclick = "addCourse()" class = "custom-buttons">
             </fieldset>
+            <fieldset>
+                <label for = "fun-fact">Funny/Interesting fact about yourself:</label>
+                <textarea id = "fun-fact" name = "fun-fact"></textarea>
+                <label for = "other">Anything else you'd like to share?</label>
+                <textarea id = "other" name = "other"></textarea>
+            </fieldset>
+            <fieldset>
+                <input type = "checkbox" id = "agree" name = "agree" required>
+                <label for = "agree" class = "checkbox-label">I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available.</label>
+            </fieldset>
             <fieldset style = "padding: 2rem 2rem; text-align: center; border: none;">
-                <input type = "submit" value = "Submit">
+                <input type = "submit" value = "Generate Intro!">
                 <input type = "reset" value = "Reset">
             </fieldset>
         </form>

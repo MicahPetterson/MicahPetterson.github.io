@@ -157,3 +157,9 @@ input[type = "checkbox"], input[type = "radio"] {
     text-align: center;
     text-indent: 0;
 }
+
+#back-button{
+    margin: 20px auto;
+    width: 150px;
+    display: block;
+}
