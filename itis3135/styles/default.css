@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Hind+Guntur');
 @import url('https://fonts.googleapis.com/css?family=Quantico');
 
+@media (max-width: 576px)
+{
+    h1, h2, h3, p, ul, li {
+        margin: 5px auto;
+    }
+
+    input:not([type = "button"]), textarea {
+        width: 30%;
+    }
+
+    img {
+        width: 150px;
+    }
+}
+
 body {
     background-color: #050808;
     background-image: linear-gradient(to bottom, #1d2a2d, #050808);
@@ -121,6 +136,10 @@ input[type = "button"]:hover, input[type = "submit"]:hover, input[type = "reset"
 input[type = "button"]:active, input[type = "submit"]:active, input[type = "reset"]:active {
     background-color: #06003e;
     border: 1px solid #819fb8;
+}
+
+input[type = "text"] {
+    display: block;
 }
 
 textarea {
