@@ -67,6 +67,10 @@ calculator.addEventListener('click', event =>
                     operand_1 = num_display.innerHTML;
                     operator_display.innerHTML = operand_1 + " " + operator_queued;
                 }
+                if (operator_display.innerHTML != "" && operator_queued == null)
+                {
+                    operator_display.innerHTML = "";
+                }
                 num_display.innerHTML = "0.";
                 num_has_decimal = true;
             }
@@ -194,6 +198,13 @@ function captionGen(num)
             break;
         case 17:
             caption.innerHTML = "Hi Sammy!";
+            break;
+        case 360:
+            caption.innerHTML = "Woah! That's a full circle!";
+            break;
+        case 21:
+            caption.innerHTML = "Ahh, yes. Good old 9 + 10.";
+            break;
         default:
             caption.innerHTML = "";
             break;
