@@ -224,7 +224,7 @@ function captionGen(num)
             caption.innerHTML = "Hi Gold!! :D";
             break;
         case 2006:
-            caption.innerHTML = "Hi Monurr!";
+            caption.innerHTML = "The year Sonic fans cried.";
             break;
         default:
             caption.innerHTML = "";
