@@ -229,6 +229,9 @@ function captionGen(num)
         case 9001:
             caption.innerHTML = "Oh boy.";
             break;
+        case 44679503:
+            caption.innerHTML = "hat's a Riss right there";
+            break;
         default:
             caption.innerHTML = "";
             break;
