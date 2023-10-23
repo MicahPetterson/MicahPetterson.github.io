@@ -182,3 +182,73 @@ input[type = "checkbox"], input[type = "radio"] {
     width: 150px;
     display: block;
 }
+
+#calculator {
+    width: 160px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #2180fd;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40px);
+    grid-template-areas: "operator operator operator operator"
+                         "button button button equals"
+                         "button button button equals"
+                         "button button button equals"
+                         "button button button equals";
+}
+
+#calc-display {
+    height: 43px;
+    width: 160px;
+    margin: 0 auto;
+    background-color: #283b56;
+    border: 2px solid #89bbfe;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 27px;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+
+#operator-display {
+    margin-left: 188px;
+    margin-bottom: -14px;
+    width: 100px;
+    height: 15px;
+    font-size: 12px;
+}
+
+#calculator button {
+    background-color: #27294e;
+    color: #E4E4F5;
+    border: 1px solid #b3dbfc;
+    font-family: Quantico, monospace;
+    font-size: 20px;
+}
+
+#calculator button:hover {
+    background-color: #474180;
+}
+
+#calculator button:active {
+    background-color: #06003e;
+    border: 1px solid #819fb8;
+}
+
+.operator-button, .number-button {
+    height: 40px;
+    width: 40px;
+}
+
+.equals-button {
+    width: 100%;
+    grid-area: equals;
+}
+
+#calc-caption {
+    text-align: center;
+    text-indent: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 10px;
+}
