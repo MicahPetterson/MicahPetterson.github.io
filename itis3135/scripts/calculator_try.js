@@ -217,6 +217,9 @@ function captionGen(num)
         case 4032006:
             caption.innerHTML = "Happy Birthday, Weavil!";
             break;
+        case 1987:
+            caption.innerHTML = "WAS THAT THE B-";
+            break;
         default:
             caption.innerHTML = "";
             break;
