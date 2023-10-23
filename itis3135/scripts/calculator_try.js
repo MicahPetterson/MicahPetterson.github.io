@@ -211,6 +211,12 @@ function captionGen(num)
         case 2020:
             caption.innerHTML = "No <em>thank</em> you.";
             break;
+        case 3092006:
+            caption.innerHTML = "Happy Birthday, Anna!";
+            break;
+        case 4032006:
+            caption.innerHTML = "Happy Birthday, Weavil!";
+            break;
         default:
             caption.innerHTML = "";
             break;
