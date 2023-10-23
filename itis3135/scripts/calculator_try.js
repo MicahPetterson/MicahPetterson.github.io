@@ -220,6 +220,9 @@ function captionGen(num)
         case 1987:
             caption.innerHTML = "WAS THAT THE B-";
             break;
+        case 1991:
+            caption.innerHTML = "Hi Gold!! :D";
+            break;
         default:
             caption.innerHTML = "";
             break;
