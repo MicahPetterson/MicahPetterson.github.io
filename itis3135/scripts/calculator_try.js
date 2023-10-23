@@ -205,6 +205,9 @@ function captionGen(num)
         case 21:
             caption.innerHTML = "Ahh, yes. Good old 9 + 10.";
             break;
+        case 404:
+            caption.innerHTML = "What, did you think I was going to make some predictable programming joke? For shame.";
+            break;
         default:
             caption.innerHTML = "";
             break;
