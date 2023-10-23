@@ -192,6 +192,8 @@ function captionGen(num)
         case 10002:
             caption.innerHTML = "O shoot it Soapoapie";
             break;
+        case 17:
+            caption.innerHTML = "Hi Sammy!";
         default:
             caption.innerHTML = "";
             break;
