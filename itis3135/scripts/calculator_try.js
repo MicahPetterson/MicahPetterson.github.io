@@ -156,6 +156,9 @@ function captionGen(num)
         case 5774230560:
             caption.innerHTML = "Yo Shooge :D";
             break;
+        case 4196178005:
+            caption.innerHTML = "Eyy, well if it isn't Double Decker Danny!";
+            break;
         default:
             caption.innerHTML = "";
             break;
