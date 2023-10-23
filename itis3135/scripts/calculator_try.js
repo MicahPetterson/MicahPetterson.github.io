@@ -30,7 +30,7 @@ calculator.addEventListener('click', event =>
         }
         else
         {
-            if (num_display.innerHTML == "0")
+            if (num_display.innerHTML == "0"/* || (operand_2 == null && operator_display != null)*/)
             {
                 num_display.innerHTML = event.target.innerHTML;
             }
@@ -47,6 +47,7 @@ calculator.addEventListener('click', event =>
         {
             operator_queued = event.target.innerHTML;
             operator_display.innerHTML = operator_queued;
+            num_has_decimal = false;
         }
         else
         {
@@ -58,9 +59,16 @@ calculator.addEventListener('click', event =>
         caption.innerHTML = "";
         if (num_has_decimal == false)
         {
-            if(num_display.innerHTML == "")
+            if(num_display.innerHTML == "" || (!operand_2_begun && operator_display.innerHTML != ""))
             {
-                num_display.innerHTML += "0.";
+                if (!operand_2_begun && operator_display.innerHTML != "")
+                {
+                    operand_2_begun = true;
+                    operand_1 = num_display.innerHTML;
+                    operator_display.innerHTML = operand_1 + " " + operator_queued;
+                }
+                num_display.innerHTML = "0.";
+                num_has_decimal = true;
             }
             else
             {
@@ -86,22 +94,44 @@ calculator.addEventListener('click', event =>
         {
             operand_2 = num_display.innerHTML;
             let result = 0;
+            let result_dec_length = 0;
+            op_1 = parseFloat(operand_1);
+            op_2 = parseFloat(operand_2);
+
+            if(op_1 % 1 != 0 && op_2 % 1 != 0)
+            {
+                let length_1 = operand_1.split('.')[1].length;
+                let length_2 = operand_2.split('.')[1].length;
+                result_dec_length = (length_1 > length_2) ? length_1 : length_2;
+            }
+            else if (op_1 % 1 != 0)
+            {
+                result_dec_length = operand_1.split('.')[1].length;
+            }
+            else if (op_2 % 1 != 0)
+            {
+                result_dec_length = operand_2.split('.')[1].length;
+            }
+
             if (operator_queued == "+")
             {
-                result = parseFloat(operand_1) + parseFloat(operand_2);
+                result = op_1 + op_2;
+                result = parseFloat(result.toFixed(result_dec_length));
             }
             else if (operator_queued == "-")
             {
-                result = parseFloat(operand_1) - parseFloat(operand_2);
+                result = op_1 - op_2;
+                result = parseFloat(result.toFixed(result_dec_length));
             }
             else if (operator_queued == "×")
             {
-                result = parseFloat(operand_1) * parseFloat(operand_2);
+                result = op_1 * op_2;
             }
             else if (operator_queued == "÷")
             {
-                result = parseFloat(operand_1) / parseFloat(operand_2);
+                result = op_1 / op_2;
             }
+
             num_display.innerHTML = result;
             operator_display.innerHTML = operand_1 + " " + operator_queued + " " + operand_2 + " =";
             operand_1 = null;
@@ -158,6 +188,9 @@ function captionGen(num)
             break;
         case 4196178005:
             caption.innerHTML = "Eyy, well if it isn't Double Decker Danny!";
+            break;
+        case 10002:
+            caption.innerHTML = "O shoot it Soapoapie";
             break;
         default:
             caption.innerHTML = "";
