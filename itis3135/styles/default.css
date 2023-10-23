@@ -211,11 +211,12 @@ input[type = "checkbox"], input[type = "radio"] {
 }
 
 #operator-display {
-    margin-left: 188px;
-    margin-bottom: -14px;
-    width: 100px;
+    margin: 0 auto -13px auto;
+    padding-left: 6px;
+    width: 160px;
     height: 15px;
     font-size: 12px;
+    text-indent: 0;
 }
 
 #calculator button {
