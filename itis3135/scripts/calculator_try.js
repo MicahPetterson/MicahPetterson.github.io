@@ -226,6 +226,9 @@ function captionGen(num)
         case 2006:
             caption.innerHTML = "The year Sonic fans cried.";
             break;
+        case 9001:
+            caption.innerHTML = "Oh boy.";
+            break;
         default:
             caption.innerHTML = "";
             break;
