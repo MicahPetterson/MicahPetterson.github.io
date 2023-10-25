@@ -30,8 +30,17 @@ calculator.addEventListener('click', event =>
         }
         else
         {
-            if (num_display.innerHTML == "0"/* || (operand_2 == null && operator_display != null)*/)
+            if (num_display.innerHTML == "0" || (operand_2 == null && operator_display.innerHTML != ""))
             {
+                if(operand_1 == null)
+                {
+                    operator_display.innerHTML = "";
+                }
+                else
+                {
+                    operand_1 = num_display.innerHTML;
+                    operator_display.innerHTML = operand_1 + " " + operator_queued;
+                }
                 num_display.innerHTML = event.target.innerHTML;
             }
             else
