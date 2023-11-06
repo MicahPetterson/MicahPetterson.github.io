@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 html {
-    background-color: #002e2c;
-    color: #c8fbf6;
+    background-color: #D6C9C9;
+    color: #37393A;
     font-family: "Nunito", sans-serif;
     padding: 10px 50px;
+}
+
+header {
+    position: sticky;
+    top: 20px;
 }
 
 h1, h2 {
@@ -19,24 +24,30 @@ p {
 
 nav {
     text-align: center;
-    background-color: #56445d;
+    background-color: #658E9C;
     width: 420px;
     height: 33px;
     margin: 0 auto;
     border-radius: 50px;
-    border: solid 2px #c8fbf6;
+    border: solid 2px #37393A;
     padding-top: 10px;
     position: sticky;
+    top: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 nav div a {
-    text-decoration: none;
-    color: #ff4365;
+    color: #37393A;
     margin: 0 7px;
+    font-weight: bold;
+    transition: all 0.3s;
 }
 
-nav a:hover {
-    color: #fda5b5;
+nav div a:hover {
+    color: #e6e8eb;
 }
 
 nav div {
@@ -48,10 +59,12 @@ nav div:hover {
     transform: scale(1.2);
 }
 
-div.sticky {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    background-color: green;
-    border: 2px solid #4CAF50;
-  }
+hr {
+    margin-top: 30px;
+    align-self: center;
+    border-color: #37393A;
+}
+
+footer {
+    text-align: center;
+}
