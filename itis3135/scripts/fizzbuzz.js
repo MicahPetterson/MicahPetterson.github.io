@@ -1,4 +1,4 @@
-for(let i = 1; i <= 100; i++)
+for(let i = 1; i <= 110; i++)
 {
     let str = "";
     if(i % 3 == 0)
