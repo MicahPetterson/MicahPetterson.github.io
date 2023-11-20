@@ -258,3 +258,7 @@ input[type = "checkbox"], input[type = "radio"] {
     display: flex;
     justify-content: center;
 }
+
+.lettered-list {
+    list-style-type: lower-alpha;
+}
