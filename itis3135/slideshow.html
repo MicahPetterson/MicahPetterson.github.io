@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Micah Petterson's Mellow Phoenix ☆ ITIS 3135 ☆ Slideshow</title>
+    <link rel = "stylesheet" href = "styles/default.css">
+</head>
+<body>
+    <div data-include = "components/header.html"></div>
+    <main>
+        <h2>Slideshow</h2>
+        <div class = "slideshow-container">
+            <div class = "slide">
+                <div class = "slide-label">1 / 14</div>
+                <img src = "images/Slide1.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">2 / 14</div>
+                <img src = "images/Slide2.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">3 / 14</div>
+                <img src = "images/Slide3.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">4 / 14</div>
+                <img src = "images/Slide4.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">5 / 14</div>
+                <img src = "images/Slide5.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">6 / 14</div>
+                <img src = "images/Slide6.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">7 / 14</div>
+                <img src = "images/Slide7.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">8 / 14</div>
+                <img src = "images/Slide8.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">9 / 14</div>
+                <img src = "images/Slide9.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">10 / 14</div>
+                <img src = "images/Slide10.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">11 / 14</div>
+                <img src = "images/Slide11.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">12 / 14</div>
+                <img src = "images/Slide12.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">13 / 14</div>
+                <img src = "images/Slide13.jpg" style = "height: 400px;">
+            </div>
+
+            <div class = "slide">
+                <div class = "slide-label">14 / 14</div>
+                <img src = "images/Slide14.jpg" style = "height: 400px;">
+            </div>
+            
+            <a class = "previous" onclick="switchSlide(-1)">&#10094;</a>
+            <a class = "next" onclick="switchSlide(1)">&#10095;</a>
+
+            <div class = "caption-container">
+                <p id="caption"></p>
+            </div>
+            
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide1.jpg" style="width:100%" onclick="loadSlide(0)" alt="Mouse">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide2.jpg" style="width:100%" onclick="loadSlide(1)" alt="iPhone">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide3.jpg" style="width:100%" onclick="loadSlide(2)" alt="Computer">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide4.jpg" style="width:100%" onclick="loadSlide(3)" alt="Adapter">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide5.jpg" style="width:100%" onclick="loadSlide(4)" alt="Hair">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide6.jpg" style="width:100%" onclick="loadSlide(5)" alt="Pepsi">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide7.jpg" style="width:100%" onclick="loadSlide(6)" alt="Exit">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide8.jpg" style="width:100%" onclick="loadSlide(7)" alt="Tall">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide9.jpg" style="width:100%" onclick="loadSlide(8)" alt="Teacher">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide10.jpg" style="width:100%" onclick="loadSlide(9)" alt="Excel">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide11.jpg" style="width:100%" onclick="loadSlide(10)" alt="Remote">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide12.jpg" style="width:100%" onclick="loadSlide(11)" alt="Sketchbook">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide13.jpg" style="width:100%" onclick="loadSlide(12)" alt="Outlet">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/Slide14.jpg" style="width:100%" onclick="loadSlide(13)" alt="Nothing">
+                </div>
+        </div>
+    </main>
+    <div data-include = "components/footer.html"></div>
+    <script src = "scripts/slideshow_script.js"></script>
+    <script src = "scripts/HTMLInclude.js"></script>
+</body>
+</html>

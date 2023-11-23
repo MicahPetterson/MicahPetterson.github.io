@@ -262,3 +262,106 @@ input[type = "checkbox"], input[type = "radio"] {
 .lettered-list {
     list-style-type: lower-alpha;
 }
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    justify-content: center;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-label {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 6px;
+    position: absolute;
+    top: 10px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 7.13%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
