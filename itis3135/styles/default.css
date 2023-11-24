@@ -345,6 +345,11 @@ input[type = "checkbox"], input[type = "radio"] {
     background-color: #222;
     padding: 2px 16px;
     color: white;
+    text-indent: 0;
+}
+
+.slideshow-caption {
+    text-indent: 0;
 }
 
 .row:after {

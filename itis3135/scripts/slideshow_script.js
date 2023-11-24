@@ -11,7 +11,7 @@ function loadSlide(n)
         slides[i].style.display = "none";
     }
     slides[n].style.display = "flex";
-    document.getElementById("caption").innerHTML = captions[n];
+    document.getElementById("slideshow-caption").innerHTML = captions[n];
     currentSlide = n;
 }
 
