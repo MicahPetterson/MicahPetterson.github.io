@@ -4,30 +4,50 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <link rel = "stylesheet" href = "styles/default.css">
-    <title>SiteName | Pointers</title>
+    <title>Oh, How Great is C! | Pointers</title>
 </head>
 <body>
-    <div data-include = "components/header.html"></div>
-    <h1>Pointers</h1>
-    <h2>First Subheader</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-    llamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia
-    deserunt mollit anim id est laborum.</p>
-    <h2>Second Subheader</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-    llamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia
-    deserunt mollit anim id est laborum.</p>
-    <div data-include = "components/footer.html"></div>
-    <script src = "scripts/HTMLInclude.js"></script>
+    <main>
+        <div data-include = "components/header.html"></div>
+        <h1>Pointers</h1>
+        <p>Now welcome to a very different type of declaration than what we discussed in the variables
+        page. This topic is one that is pretty difficult to understand at first as it is the first
+        time that we are talking about the memory addresses of variables. No don't freak out, it's not
+        that bad I promise!</p>
+        <p>Each computer has memory that it can allocate things to. Now, our variables that we create
+        need to exist somewhere (they aren't just floating out in space) and this memory in the
+        computer is exactly where these variables and their data are stored. Each location that a
+        variable is stored at is given a “memory address” that we can actually see! We can see and use
+        these addresses by using pointers.</p>
+
+        <div class = "code-block">
+            <p>int* numberAddress;</p>
+        </div>
+
+        <p>Now the way we give these pointers an actual address to a variable, is to assign it the
+        address of a variable. We do that by referencing the variable and putting “&” in front of it.
+        Take our x variable from earlier, it will look something like this:</p>
+
+        <div class = "code-block">
+            <p>int x = 5;</p>
+            <p>int* numberAddress = &x;</p>
+        </div>
+
+        <p>If you put this into a computer and print it on the console it might look something like this:</p>
+
+        <div class = "code-block">
+            <p>1072256188</p>
+        </div>
+
+        <p>Now that just looks like a bunch of random numbers, but that group of numbers tells the computer
+        where to find the data for that variable.</p>
+
+        <p>This is cool and all, but why are pointers important? Well, funny you should ask. Pointers
+        are useful to us because they allow us to manipulate the data in the main memory in a way that
+        reduces code and improves performance all at once. It is also useful further in your computer
+        science career because we can use pointers to implement multiple different data structures.</p>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/HTMLInclude.js"></script>
+    </main>
 </body>
 </html>

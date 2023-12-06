@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "styles/default.css">
+    <title>Oh, How Great is C! | Arrays</title>
+</head>
+<body>
+    <main>
+        <div data-include = "components/header.html"></div>
+        <h1>Arrays</h1>
+        <p>Oh arrays, like everything else we have talked about so far this is a very important
+        part to programming and is one of the fundamentals you must know about if you are going
+        to code any important piece of software.</p>
+
+        <p>We have already gone over variables and how they can hold information, arrays are
+        kinda like that but they can hold a lot more information than a single variable can.
+        Think of a variable as a package that holds one item(data), an array is like the truck
+        that package came on. Arrays can hold different data but the caveat to that is that all
+        of the data in one array  must be of the same data type.</p>
+
+        <p>One of the things about arrays you have to know is that you can't just put any amount
+        of things you want. When you declare an array, you must include the size that you want
+        that array to be. In other words, you are telling the computer how many items are allowed
+        to be in that array. Here's an example:</p>
+
+        <div class = "code-block">
+            <p>int myArray[20];</p>
+        </div>
+
+        <p>In this example we are telling the computer that the array will hold integers (int), it
+        will be referenced by the name myArray and it will hold 20 integers.</p>
+
+        <p>This is a very useful tool in programming because of the ability to hold multiple pieces
+        of data and allows us to condense it into one place instead of storing data into multiple
+        variables. Here is another example but this time it will actually be storing numbers:</p>
+
+        <div class = "code-block">
+            <p>int numbers[5] = {23, 6, 1, 98, 42};</p>
+        </div>
+
+        <p>You might be wondering how we might be able to access the data in an array. Good question!
+        That's just where I was going next. Each piece of data in an array will be at a different
+        index of the array and that is how we can access the data. The one weird thing that will take
+        some getting used to is that the start of an array is at the index of 0, not 1 like you would
+        think it would be. Here's an example of how to access all five of the integers in the array
+        that we initialized above us:</p>
+
+        <div class = "code-block">
+            <p>int firstNumber = numbers[0];</p>
+            <p>int secondNumber = numbers[1];</p>
+            <p>int thirdNumber = numbers[2];</p>
+            <p>int fourthNumber = numbers[3];</p>
+            <p>int fifthNumber = numbers[4];</p>
+        </div>
+
+        <p>All of those variables would now hold the corresponding integers that it was assigned.
+        Here try out some of these problems that we laid out for you. Good luck!</p>
+
+        <p>Given the follow code:</p>
+
+        <div class = "code-block">
+            <p>int numberList[4] = {76, 2, 67, 8};</p>
+            <p>int chosenNumber = numberList[3];</p>
+            <p>printf(“chosenNumber: %d”, chosenNumber);</p>
+        </div>
+
+        <p>What will the printed output be?</p>
+        <div id = "quiz">
+            <div id = "quiz-options">
+                <p class = "quiz-answer">76</p>
+                <p class = "quiz-answer">2</p>
+                <p class = "quiz-answer">67</p>
+                <p class = "quiz-answer">8</p>
+            </div>
+
+            <div id = "quiz-solution"></div>
+        </div>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/quiz_scripts.js"></script>
+        <script src = "scripts/HTMLInclude.js"></script>
+    </main>
+</body>
+</html>

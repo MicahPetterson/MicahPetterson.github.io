@@ -4,30 +4,161 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <link rel = "stylesheet" href = "styles/default.css">
-    <title>SiteName | Variables</title>
+    <title>Oh, How Great is C! | Variables</title>
 </head>
 <body>
-    <div data-include = "components/header.html"></div>
-    <h1>Variables</h1>
-    <h2>First Subheader</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-    llamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia
-    deserunt mollit anim id est laborum.</p>
-    <h2>Second Subheader</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-    llamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia
-    deserunt mollit anim id est laborum.</p>
-    <div data-include = "components/footer.html"></div>
-    <script src = "scripts/HTMLInclude.js"></script>
+    <main>
+        <div data-include = "components/header.html"></div>
+        <h1>Variables</h1>
+        <p>Oh variables, one of the most basic building blocks of programming. Variables are what we use
+        to hold data in a program, we can use variables to manipulate this data in many different ways.
+        Whether it be to do math using them, use them to store data that the user inputs, and many other
+        things. As you will see, variables are very very very important to every programming language
+        and is how we do anything productive in programs. First we will start with how to initialize,
+        which means to give a variable data, or to put it into the program that you are writing.</p>
+        <p>Say we have a variable that we want to name “number” that we will use to store the number 5 in a program.</p>
+
+        <div class = "code-block">
+            <p>int number = 5;</p>
+        </div>
+
+        <p>You will see a couple of things that we haven't mentioned yet, “int” and the semicolon at the
+        end of the statement. We will start by discussing what “int” means and what other words we can
+        use when we are declaring variables. We call these words data types and this table will show
+        you the different data types in C and what data can be stored in them.</p>
+
+        <table>
+            <tr>
+                <th>Data Type Name</th>
+                <th>C Keyword</th>
+                <th>Description</th>
+                <th>Examples</th>
+            </tr>
+            <tr>
+                <td>Integer</td>
+                <td>int</td>
+                <td>Can store whole number, no decimals</td>
+                <td>
+                    <p>5</p>
+                    <p>102</p>
+                    <p>7</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Float</td>
+                <td>float</td>
+                <td>Can store numbers with decimals up to 6-7 decimal digits</td>
+                <td>
+                    <p>5.1234</p>
+                    <p>1.5</p>
+                    <p>10.82</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Double</td>
+                <td>double</td>
+                <td>Can store numbers with decimals up to 15 decimal digits</td>
+                <td>
+                    <p>3.14159265359</p>
+                    <p>21.987</p>
+                    <p>15.9132657</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Character</td>
+                <td>char</td>
+                <td>Can store a single character, letter, or number</td>
+                <td>
+                    <p>'H'</p>
+                    <p>'&'</p>
+                    <p>'1'</p>
+                </td>
+            </tr>
+            <tr>
+                <td><em>String</em></td>
+                <td>N/A</td>
+                <td>String is a little bit different in C that in
+                other languages because it is not an actual declaration
+                but is an array of characters</td>
+                <td>
+                    <p>"Hello"</p>
+                    <p>"C is great!"</p>
+                    <p>"My name is"</p>
+                </td>
+            </tr>
+        </table>
+
+        <p>The semicolon that we discussed in the last paragraph is what is used to end every statement
+        in C. It is very important that they are used to end every line because it is what tells
+        the computer that a statement is finished, so it will not run without any semicolons.</p>
+
+        <p>There you have it! Now that you understand variables better we can move on to even better
+        things. Now remember that since variables are one of the most basic building blocks of
+        programming, you are gonna need to remember how to write these statements to store data within
+        your programs. You can always refer back to this page to help clarify some things if you don't remember.</p>
+        
+        <h2>Printing</h2>
+
+        <p>We are also going to talk about printing on this page. Now I'm not gonna lie, printing is a
+        little bit more annoying in C than in many other languages, but it's not that bad. Now you
+        may be asking, “What is printing?”. Good question! It is something we do when we want to
+        print the output to where we can see it. So that may be the console, the console inside of
+        an IDE, etc. but whatever is being printed will be seen by the user. This is the code we
+        would use to print something out:</p>
+
+        <div class = "code-block">
+            <p>("Hello World!");</p>
+        </div>
+
+        <p>This would print out:</p>
+
+        <div class = "code-block">
+            Hello World!
+        </div>
+
+        <p>Printing is very useful in programming as it allows the user to actually be involved with
+        the code that has been written. It can be more tricky when you want to print out a variable
+        because a little bit more is needed. In order to add a variable to a print statement, we need
+        to specify its data type using the “%” operator followed by a letter telling the computer
+        what kind of variable it is. One more thing needs to be added, after the quotes you will add
+        a comma followed by the variable name. Like so:</p>
+
+        <div class = "code-block">
+            <p>int x = 5;</p>
+            <p>printf(“This number is %d”,x);</p>
+        </div>
+
+        <p>Here are the symbols for the different data types:</p>
+
+        <table>
+            <tr>
+                <th>Data Type</th>
+                <th>Symbol</th>
+            </tr>
+            <tr>
+                <td>char</td>
+                <td>%c</td>
+            </tr>
+            <tr>
+                <td>int</td>
+                <td>%d or %i</td>
+            </tr>
+            <tr>
+                <td>float</td>
+                <td>%f</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>%f</td>
+            </tr>
+            <tr>
+                <td><em>string</em></td>
+                <td>%s</td>
+            </tr>
+        </table>
+        
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/HTMLInclude.js"></script>
+    </main>
 </body>
 </html>

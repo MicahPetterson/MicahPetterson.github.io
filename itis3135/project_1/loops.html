@@ -4,30 +4,164 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
     <link rel = "stylesheet" href = "styles/default.css">
-    <title>SiteName | Loops</title>
+    <title>Oh, How Great is C! | Loops</title>
 </head>
 <body>
-    <div data-include = "components/header.html"></div>
-    <h1>Loops</h1>
-    <h2>First Subheader</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-    llamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia
-    deserunt mollit anim id est laborum.</p>
-    <h2>Second Subheader</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-    llamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia
-    deserunt mollit anim id est laborum.</p>
-    <div data-include = "components/footer.html"></div>
-    <script src = "scripts/HTMLInclude.js"></script>
+    <main>
+        <div data-include = "components/header.html"></div>
+        <h1>Loops</h1>
+
+        <p>Ah, loops. Now these are pretty fun, I'm not gonna lie. Loops do exactly what you think
+        they do when you first hear the term, they loop! Now they don't just loop on forever but
+        you will see in a minute what I am talking about. There are two basic types of loops in C,
+        for loops and while loops. There are pretty distinct differences between the two and they
+        should be used in different circumstances. We are going to start off talking about for loops.</p>
+
+        <h2>For Loops</h2>
+
+        <p>For Loops are the loops that you are probably going to see the most of early on as they
+        are used for lots of things. Loops may sound like a thing that is not very important but
+        you will soon find out just how important they are and how much you need them to do so many
+        things. Let's start out with the basic setup of a for loop. I am going to provide the code
+        skeleton first and then explain the different parts later.</p>
+
+        <div class = "code-block">
+            <p>for (iterator variable; condition; increment iterator)</p>
+            <p>{</p>
+            <p class = "indented-code">loop content;</p>
+            <p>}</p>
+        </div>
+
+        <p>Here is one filled out for you,</p>
+
+        <div class = "code-block">
+            <p>for (int i = 0; i < 100; i++)</p>
+            <p>{</p>
+            <p class = "indented-code">int sum = sum + 10;</p>
+            <p>}</p>
+        </div>
+
+        <p>Now, you may be wondering what these are actually useful for. Well one of the major uses
+        is to iterate through (or look through) an array. We have the ability to view whatever is
+        in each spot of an array and do whatever we want with that data. For example, let's assume
+        we have an array of integers named numbers and it already has multiple values inside of it.
+        Imagine you wanted to take each one of these numbers and add them together to get the sum
+        of all of the integers in numbers. This is what it might look like,</p>
+
+        <div class = "code-block">
+            <p>int sum = 0;</p>
+            <p>for (int i = 0; i < sizeOf(numbers); i++)</p>
+            <p>{</p>
+            <p class = "indented-code">sum += number[i];</p>
+            <p>}</p>
+        </div>
+
+        <p>To give you an understanding of how this might work, type any positive whole number in
+        the blank below. Then, click the "Run" button, and you will see the sum of all the numbers
+        from 0 to the number you entered, all thanks to this for loop!.
+        </p>
+
+        <div class = "code-block">
+            <p>int yourNumber = <input type = "number" id = "loop-number">;</p>
+            <p>int sum = 0;</p>
+            <p>for (int i = 0; i <= yourNumber; i++)</p>
+            <p>{</p>
+            <p class = "indented-code">sum += i;</p>
+            <p>}</p>
+            <p>printf("Sum: %d", sum);</p>
+        </div>
+
+        <input type = "button" value = "Run" id = "run-button" onclick = "runLoop()">
+        <p id = "loop-caption"></p>
+
+        <p id = "loop-output-label">Output:</p>
+        <div class = "code-block" id = "loop-output"></div>
+
+        <p>In the previous function, we are iterating through the array by putting 'i' inside the
+        brackets next to the array name. Since we are trying to sum all of the numbers in the array
+        together we need to continue adding each number to a variable named 'sum'. This will
+        iterate through the entire length of the array because as part of the conditional we stated
+        that the loop will keep going while 'i' is still less than the size of the array. If you
+        are wondering how we did that, it was the sizeOf() function which tells the computer the
+        size of the array that we put in it.</p>
+
+        <p>Now that you know the fundamentals of the For loop, we are going to talk about While loops.</p>
+
+        <h2>While Loops</h2>
+
+        <p>So you might be wondering why there are different types of loops and what the different uses
+        of these might be. For loops are very useful when you already know the amount of times you need
+        to loop, and while loops are useful when you don't know the amount of times you need to loop.
+        Now this will not really be a need for you so early in your programming career but it is still
+        useful knowledge to know how to build and use a while loop. Here is the basic outline for a while loop:</p>
+
+        <div class = "code-block">
+            <p>while (controller)</p>
+            <p>{</p>
+            <p class = "indented-code">(statement to loop through);</p>
+            <p>}</p>
+        </div>
+
+        <p>Now obviously this example doesn't show you exactly how it might work so let's explore it a
+        little more. The controller statement is what allows the loop to actually run. As long as the
+        controller statement is true then the loop will continue to run. Let's look at another example:</p>
+
+        <div class = "code-block">
+            <p>int i = 0;</p>
+            <p>while (i < 5)</p>
+            <p>{</p>
+            <p class = "indented-code">printf(“i is %d”, i);</p>
+            <p class = "indented-code">i++;</p>
+            <p>}</p>
+        </div>
+
+        <p>Now the loop I just showed you could be accomplished as a for loop but that's okay for now.
+        You really just need to know these two types of loops for now.</p>
+
+        <p>One of the major differences between for loops and while loops that we haven't talked about
+        yet is when the loops check the condition statement. For loops check the condition statement
+        before it executes the statement inside the loop, meanwhile while loops check the condition
+        after the statement is executed. This means that even if the condition is false a while loop
+        will always run at least once. Now lets see if you can apply this knowledge by looking at this example:</p>
+
+        <div class = "code-block">
+            <p>int x = 5;</p>
+            <p>for (int i = 0; i > 5; i++)</p>
+            <p>{</p>
+            <p class = "indented-code">System.out.println(“This loop is running”);</p>
+            <p>}</p>
+            <p class = "code-spacer"></p>
+            <p>int counter = 0;</p>
+            <p>while (counter > x)</p>
+            <p>{</p>
+            <p class = "indented-code">System.out.println(“No, this loop is running”);</p>
+            <p>}</p>
+        </div>
+
+        <p>Now what will this program print out?</p>
+
+        <div id = "loop-quiz">
+            <div id = "loop-quiz-options">
+                <div class = "code-block loop-quiz-option">
+                    <div onclick = "loopAnswer(0)"><p>This loop is running</p></div>
+                </div>
+                <div class = "code-block loop-quiz-option">
+                    <div onclick = "loopAnswer(0)"><p>This loop is running</p>
+                    <p>No, this loop is running</p></div>
+                </div>
+                <div class = "code-block loop-quiz-option">
+                    <div onclick = "loopAnswer(0)"><p>No, this loop is running</p></div>
+                </div>
+                <div class = "code-block loop-quiz-option">
+                    <div onclick = "loopAnswer(1)"><p>[Neither loop will print anything.]</p></div>
+                </div>
+            </div>
+            <div id = "loop-quiz-solution">eee</div>
+        </div>
+
+        <script src = "scripts/quiz_scripts.js"></script>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/HTMLInclude.js"></script>
+    </main>
 </body>
 </html>
